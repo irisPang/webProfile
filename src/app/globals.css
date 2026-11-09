@@ -84,11 +84,17 @@ body {
 }
 .hero-art { position: relative; min-height: 44rem; overflow: hidden; }
 .hero-collage { position: absolute; inset: 0; pointer-events: none; }
-.hero-orb { position: absolute; left: -8%; top: 4%; width: 92%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; }
-.hero-ridge { position: absolute; inset: auto 0 0; height: 34%; opacity: .65; mask-image: linear-gradient(transparent, #000); }
-.hero-portrait { position: absolute; left: 13%; top: 26%; width: 90%; height: 96%; z-index: 3; filter: saturate(.82) brightness(.94); mask-image: linear-gradient(to bottom, #000 63%, transparent 94%); }
-.hero-orbits { position: absolute; inset: 0; z-index: 2; opacity: .45; }
-.hero-vignette { position: absolute; inset: 0; z-index: 5; background: linear-gradient(0deg, var(--midnight), transparent 22%); }
+.hero-portrait { position: absolute; inset: 0; z-index: 1; filter: saturate(.92) contrast(1.03) brightness(.97); }
+.hero-portrait img { object-position: 52% 14%; }
+.hero-vignette { position: absolute; inset: 0; z-index: 2; background:
+  linear-gradient(90deg, transparent 50%, rgba(23, 24, 33, .55) 85%, var(--midnight) 100%),
+  linear-gradient(0deg, var(--midnight) 1%, transparent 34%),
+  linear-gradient(180deg, rgba(23, 24, 33, .6) 0, transparent 22%),
+  radial-gradient(135% 100% at 45% 30%, transparent 46%, rgba(23, 24, 33, .4) 100%); }
+.hero-orbits { position: absolute; inset: 0; z-index: 3; opacity: .38; mix-blend-mode: screen; }
+.hero-orb { position: absolute; left: -16%; top: 1%; width: 54%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; z-index: 4; opacity: .82; mix-blend-mode: screen;
+  mask-image: radial-gradient(circle, #000 50%, transparent 72%);
+  -webkit-mask-image: radial-gradient(circle, #000 50%, transparent 72%); }
 .hero-wordmark { position: absolute; top: 5%; left: 7%; z-index: 6; margin: 0; white-space: nowrap; font-family: var(--font-serif), Georgia, serif; font-size: clamp(6rem, 12vw, 11rem); line-height: 1; letter-spacing: -.035em; text-shadow: 0 3px 24px rgba(0,0,0,.25); }
 .hero-wordmark > span { display: block; }
 .hero-surname { margin-left: 1.7em; margin-top: -.05em; font-size: .38em; letter-spacing: .015em; }
@@ -103,10 +109,10 @@ body {
 #conversations { scroll-margin-top: 2rem; }
 @media (max-width: 1023px) {
   .hero-editorial { grid-template-columns: 1fr; }
-  .hero-art { min-height: 0; height: clamp(22rem, 58vw, 36rem); }
-  .hero-orb { left: 8%; width: 72%; top: -15%; }
+  .hero-art { min-height: 0; height: clamp(24rem, 64vw, 38rem); }
+  .hero-orb { left: 2%; width: 44%; top: -10%; }
   .hero-wordmark { left: 7%; font-size: clamp(5rem, 20vw, 9rem); }
-  .hero-portrait { left: 24%; top: 24%; width: 76%; height: 112%; }
+  .hero-portrait img { object-position: 50% 10%; }
   .hero-copy { padding: 1.5rem 2rem 3.5rem; max-width: 42rem; }
   .hero-statement { font-size: clamp(3rem, 8vw, 4.8rem); }
   .hero-eyebrow { margin-bottom: 1.25rem; }
