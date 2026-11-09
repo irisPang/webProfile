@@ -7,10 +7,7 @@ export function Hero() {
     <section className="hero-editorial" aria-label="Introduction">
       <div className="hero-art">
         <HeroCollage />
-        <p className="hero-wordmark" aria-hidden="true">
-          <span>IRIS</span>
-          <span className="hero-surname">PANG</span>
-        </p>
+        <p className="hero-wordmark" aria-hidden="true">IRIS</p>
       </div>
       <div className="hero-copy">
         <p className="hero-eyebrow">{site.name} / An editorial world</p>

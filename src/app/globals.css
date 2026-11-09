@@ -85,7 +85,7 @@ body {
 .hero-art { position: relative; min-height: 44rem; overflow: hidden; }
 .hero-collage { position: absolute; inset: 0; pointer-events: none; }
 .hero-portrait { position: absolute; inset: 0; z-index: 1; filter: saturate(.92) contrast(1.03) brightness(.97); }
-.hero-portrait img { object-position: 52% 14%; }
+.hero-portrait img { object-position: 42% 14%; }
 .hero-vignette { position: absolute; inset: 0; z-index: 2; background:
   linear-gradient(90deg, transparent 50%, rgba(23, 24, 33, .55) 85%, var(--midnight) 100%),
   linear-gradient(0deg, var(--midnight) 1%, transparent 34%),
@@ -95,9 +95,7 @@ body {
 .hero-orb { position: absolute; left: -16%; top: 1%; width: 54%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; z-index: 4; opacity: .82; mix-blend-mode: screen;
   mask-image: radial-gradient(circle, #000 50%, transparent 72%);
   -webkit-mask-image: radial-gradient(circle, #000 50%, transparent 72%); }
-.hero-wordmark { position: absolute; top: 5%; left: 7%; z-index: 6; margin: 0; white-space: nowrap; font-family: var(--font-serif), Georgia, serif; font-size: clamp(6rem, 12vw, 11rem); line-height: 1; letter-spacing: -.035em; text-shadow: 0 3px 24px rgba(0,0,0,.25); }
-.hero-wordmark > span { display: block; }
-.hero-surname { margin-left: 1.7em; margin-top: -.05em; font-size: .38em; letter-spacing: .015em; }
+.hero-wordmark { position: absolute; top: 5%; left: 4.5%; z-index: 6; margin: 0; white-space: nowrap; font-family: var(--font-serif), Georgia, serif; font-size: clamp(3.4rem, 6.2vw, 6.2rem); line-height: .92; letter-spacing: -.02em; text-shadow: 0 2px 26px rgba(0,0,0,.55); }
 .hero-copy { position: relative; align-self: center; padding: 4rem clamp(1.5rem, 4vw, 5rem) 5rem 2rem; }
 .hero-eyebrow { margin-bottom: 2rem; font-size: .65rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ivory); opacity: .7; }
 .hero-statement { font-family: var(--font-serif), Georgia, serif; font-size: clamp(3rem, 5.4vw, 6rem); font-weight: 400; line-height: .98; letter-spacing: -.035em; }
